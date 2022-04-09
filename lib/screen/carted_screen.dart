@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CartedScreen extends StatelessWidget {
@@ -33,6 +34,7 @@ class CartedScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Padding(
@@ -66,52 +68,51 @@ class CartedScreen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(bottom: 18.0, left: 50),
+                        padding: const EdgeInsets.only(bottom: 18.0),
                         child: Align(
-                            alignment: Alignment.bottomRight,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey[200],
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      child: const Icon(
-                                        Icons.add,
-                                        size: 15,
-                                      ),
-                                      height: 20,
-                                      width: 20,
-                                      color: Colors.white,
+                          alignment: Alignment.bottomRight,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Container(
+                                    child: const Icon(
+                                      Icons.add,
+                                      size: 15,
                                     ),
+                                    height: 20,
+                                    width: 20,
+                                    color: Colors.white,
                                   ),
-                                  const Text(
-                                    '1',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.w900),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      child: const Icon(
-                                        Icons.remove,
-                                        size: 15,
-                                      ),
-                                      height: 20,
-                                      width: 20,
-                                      color: Colors.white,
+                                ),
+                                const Text(
+                                  '1',
+                                  style: TextStyle(fontWeight: FontWeight.w900),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Container(
+                                    child: const Icon(
+                                      Icons.remove,
+                                      size: 15,
                                     ),
+                                    height: 20,
+                                    width: 20,
+                                    color: Colors.white,
                                   ),
-                                ],
-                              ),
-                            )),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                       ),
                     ],
                   ),
-                  width: double.infinity,
                   height: 135,
                   decoration: BoxDecoration(
                     color: Colors.white,
