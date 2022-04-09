@@ -31,7 +31,7 @@ class CartedScreen extends StatelessWidget {
             child: ListView.builder(
               itemCount: 5,
               itemBuilder: (context, index) => Container(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.fromLTRB(8, 4.0, 8, 4),
                 child: Container(
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
